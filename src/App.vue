@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- <index class="index_style"></index>
+    <div>
+      <tiptap />
+    </div> -->
+    <index></index>
+    <router-view></router-view>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import index from './components/index.vue'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // Tiptap,
+     index,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.index_style {
+  width: 60%;
+  margin: 0 auto;
 }
 </style>
